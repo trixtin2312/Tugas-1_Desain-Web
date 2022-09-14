@@ -1,0 +1,125 @@
+* {
+    margin: 5px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat',sans-serif;
+}
+
+nav {
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: space-around;
+    /* padding: 15px 0; */
+    color: rgb(0, 0, 0);
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 37%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 147, 15);
+}
+
+.page {
+    height: 280px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+}
+  
+.page > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+    border-top: 1px solid rgb(228, 228, 228);
+}
+.page h2 {
+    color: var(--darkGray);
+    font-weight: bolder;
+}
+  
+.page p {
+    color: var(--gray);
+}
+  
+.page > div > div {
+    width: 500px;
+}
+  
+.page > img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.description-left-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.readmore {
+    font-weight: 700;
+  }
+
+.readmore{
+    padding: 5px 10px;
+    background-color: #a2a2a2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.readmore:hover{
+    color: rgb(232, 220, 220);
+}
+
+/*ukuran tablet*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .page {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    
+    .page h2,
+    .page p {
+        text-align: center;
+    }
+    
+    .page > div {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .page > div > div {
+        width: 100%;
+    }
+    
+    .page > img {
+        width: 100%;
+        height: 200px;
+    }
+}
